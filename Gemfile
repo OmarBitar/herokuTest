@@ -7,6 +7,8 @@ ruby '2.7.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 # Use postgres as the database for Active Record
 gem 'pg'
+gem 'dotenv-rails'
+
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
