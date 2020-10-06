@@ -14,7 +14,7 @@ RUN apt-get update -qq && apt-get install -y nodejs postgresql-client \
 RUN mkdir /app
 WORKDIR /app
 
-EXPOSE 3000
+
 
 COPY Gemfile .
 COPY Gemfile.lock . 
@@ -23,3 +23,7 @@ RUN bundle install
 COPY package.json .
 COPY yarn.lock .
 RUN yarn install --check-files
+
+EXPOSE 3000
+
+CMD ["rails", "server", "-b", "0.0.0.0"]
