@@ -20,6 +20,8 @@ COPY Gemfile .
 COPY Gemfile.lock . 
 RUN bundle install  
 
+COPY Rakefile .
+
 COPY package.json .
 COPY yarn.lock .
 RUN yarn install --check-files
