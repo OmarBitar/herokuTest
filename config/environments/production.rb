@@ -3,6 +3,9 @@ Rails.application.configure do
 
   # docker yarn fix
   config.webpacker.check_yarn_integrity = false
+  # heroku fix
+  config.hosts << "floorvocerage.herokuapp.com"
+
 
   # Code is not reloaded between requests.
   config.cache_classes = true

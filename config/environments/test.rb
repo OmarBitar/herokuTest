@@ -10,6 +10,8 @@ Rails.application.configure do
 
   # docker yarn fix
   config.webpacker.check_yarn_integrity = false
+  # heroku fix
+  config.hosts << "floorvocerage.herokuapp.com"
 
   # Do not eager load code on boot. This avoids loading your whole application
   # just for the purpose of running a single test. If you are using a tool that
