@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>Schedule</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id='container'>
+      <div id='header'>
+        Really Good Pizza              <!-- this needs to be a variable -->
+      </div>
+      <%= render "layouts/menu" %>
+      <div id='yield'>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

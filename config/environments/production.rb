@@ -1,12 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  # docker yarn fix
-  config.webpacker.check_yarn_integrity = false
-  # heroku fix
-  config.hosts << "floorvocerage.herokuapp.com"
-
-
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -64,7 +58,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "blog_production"
+  # config.active_job.queue_name_prefix = "floor_coverage_production"
 
   config.action_mailer.perform_caching = false
 
